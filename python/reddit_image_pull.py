@@ -4,6 +4,10 @@ from psaw import PushshiftAPI
 import numpy as np
 
 api = psaw.PushshiftAPI()
+# if can't connect, comment the top and uncomment the bottom. 
+# this seems to fix it. Who knows why. 
+# Probably the person who wrote this as a solution.
+# api = psaw.PushshiftAPI(rate_limit_per_minute=60)
 
 from PIL import Image, UnidentifiedImageError
 
